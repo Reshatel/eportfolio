@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Максим Остапчук — e-portfolio</title>
+<style>
+:root{--bg:#faf7f2;--ink:#2a2622;--muted:#7a7066;--line:#e6ded2;--accent:#a8563b;--soft:#f1e9dd}
+@media(prefers-color-scheme:dark){:root{--bg:#1c1917;--ink:#efe9e1;--muted:#a69b8f;--line:#332e29;--accent:#e0926f;--soft:#27221e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 Georgia,"Times New Roman",serif}
+a{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.wrap{max-width:720px;margin:0 auto;padding:0 24px}
+header{padding:72px 0 36px}
+.hello{color:var(--muted);font-size:15px;margin:0 0 6px}
+h1{font-size:clamp(34px,7vw,48px);font-weight:normal;line-height:1.15;margin:0 0 14px}
+.lead{font-size:19px;margin:0 0 6px}
+.sub{color:var(--muted);margin:0 0 22px;font-size:16px}
+.links{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:16px;font-family:system-ui,sans-serif}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:15px;font-family:system-ui,sans-serif;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.item{margin-bottom:22px}
+.item:last-child{margin-bottom:0}
+.item h3{font-size:19px;font-weight:normal;margin:0}
+.when{color:var(--muted);font-size:15px;margin:0 0 4px;font-family:system-ui,sans-serif}
+.item p{margin:4px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--soft);padding:3px 12px;border-radius:8px;font-size:15px;font-family:system-ui,sans-serif}
+footer{padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;font-family:system-ui,sans-serif}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<p class="hello">Академічне e-portfolio</p>
+<h1>Максим Остапчук</h1>
+<p class="lead">Frontend-розробник і магістрант комп'ютерних наук</p>
+<p class="sub">Центральноукраїнський державний університет імені Володимира Винниченка, Кропивницький</p>
+<div class="links">
+<a href="https://orcid.org/0009-0000-6143-4775">ORCID</a>
+<a href="https://github.com/Reshatel">GitHub</a>
+<a href="https://doi.org/10.32782/IT/2026-3-35">Моя стаття</a>
+<a href="Maksym_Ostapchuk_CV.docx">CV</a>
+</div>
+</div>
+</header>
+<main class="wrap">
+<section>
+<h2>Про мене</h2>
+<p>Навчаюся на магістратурі за спеціальністю «Комп'ютерні науки» і працюю frontend-розробником. Мені цікаво, як складні інтерактивні речі живуть у браузері: від архітектури вебзастосунків до тривимірної візуалізації. Намагаюся поєднувати практику у веброзробці з науковою роботою.</p>
+</section>
+<section>
+<h2>Що досліджую</h2>
+<p>Тема магістерської: методи та засоби розробки веб-орієнтованої системи інтерактивного конфігурування об'єктів складної структури.</p>
+<div class="chips"><span>веб-конфігуратори</span><span>моделі обмежень</span><span>3D у браузері</span><span>WebGL</span><span>візуалізація</span><span>безпека вебклієнтів</span></div>
+</section>
+<section>
+<h2>Досвід</h2>
+<div class="item">
+<h3>Frontend-розробник, ТОВ «СКЛОРЕСУРС»</h3>
+<p class="when">з листопада 2026 · дистанційно</p>
+<p>Розробка клієнтської частини вебзастосунків компанії.</p>
+</div>
+<div class="item">
+<h3>WordPress / frontend-розробник, вебпортал льотної академії</h3>
+<p class="when">близько 6 місяців · usfa.edu.ua</p>
+<p>Розробка та підтримка сторінок і функціоналу порталу.</p>
+</div>
+</section>
+<section>
+<h2>Освіта</h2>
+<div class="item">
+<h3>Магістр, Комп'ютерні науки (F3)</h3>
+<p class="when">Центральноукраїнський державний університет імені Володимира Винниченка · навчання триває</p>
+</div>
+<div class="item">
+<h3>Бакалавр, Комп'ютерні науки</h3>
+</div>
+</section>
+<section>
+<h2>Публікація</h2>
+<div class="item">
+<h3>Візуалізація цифрового відбитку браузера засобами React: архітектура вебзастосунку та оцінювання ризику деанонімізації відповідно до користувацьких вимог</h3>
+<p class="when">Рєзіна О., Присяжнюк О., Остапчук М. · Information Technology: Computer Science, Software Engineering and Cyber Security, № 3, 2026 · опубліковано 10.11.2026</p>
+<p>У роботі описано модульну архітектуру вебзастосунку на React, який збирає параметри браузера через WebGL, Canvas та AudioContext, показує їх у вигляді графа й оцінює ризик деанонімізації.</p>
+<p><a href="https://doi.org/10.32782/IT/2026-3-35">doi.org/10.32782/IT/2026-3-35</a></p>
+</div>
+</section>
+<section>
+<h2>Проєкти</h2>
+<div class="item">
+<h3>Параметричний 3D-конфігуратор навісу</h3>
+<p>Конфігуратор на Three.js, у якому сцена збирається з параметрів.</p>
+</div>
+<div class="item">
+<h3>Анімовані вебсайти</h3>
+<p>Сайти зі сценами, що реагують на прокручування, на React, Next.js, GSAP та Three.js. Код на <a href="https://github.com/Reshatel">GitHub</a>.</p>
+</div>
+</section>
+<section>
+<h2>Навички</h2>
+<div class="chips"><span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>GSAP</span><span>Three.js</span><span>React Three Fiber</span><span>WordPress</span><span>Python</span></div>
+</section>
+<section>
+<h2>Профілі</h2>
+<p><a href="https://orcid.org/0009-0000-6143-4775">ORCID · 0009-0000-6143-4775</a><br><a href="https://github.com/Reshatel">GitHub · Reshatel</a></p>
+</section>
+</main>
+<footer><div class="wrap">Максим Остапчук · 2026</div></footer>
+</body>
+</html>
